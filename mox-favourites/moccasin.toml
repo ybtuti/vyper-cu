@@ -16,5 +16,15 @@ default_account_name = "default"
 explorer_uri = "https://eth-sepolia.blockscout.com/"
 explorer_type = "blockscout"
 
+[networks.sepolia-zksync]
+url = "$SEPOLIA_ZKSYNC_RPC_URL"
+chain_id = 300
+prompt_live = false
+save_to_db = false
+default_account_name = "default"
+is_zksync = true
+explorer_uri = "https://explorer.sepolia.era.zksync.dev/"
+explorer_type = "zksyncexplorer"
+
 
 # You can view all configuration options at https://cyfrin.github.io/moccasin/all_moccasin_toml_parameters.html

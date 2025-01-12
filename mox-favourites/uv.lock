@@ -820,12 +820,16 @@ source = { virtual = "." }
 dependencies = [
     { name = "moccasin" },
     { name = "pytest" },
+    { name = "titanoboa" },
+    { name = "titanoboa-zksync" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "moccasin", specifier = "==0.3.6" },
     { name = "pytest", specifier = ">=8.3.4" },
+    { name = "titanoboa", specifier = ">=0.2.5" },
+    { name = "titanoboa-zksync", specifier = ">=0.2.9" },
 ]
 
 [[package]]
