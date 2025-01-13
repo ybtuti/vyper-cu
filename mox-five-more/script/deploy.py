@@ -14,6 +14,10 @@ def deploy_factory(favorites_contract: VyperContract):
     new_favorites_contract.store(77)
     print(f"Stored value in new favorites contract: {new_favorites_contract}")
 
+    factory_contract.store_from_factory(0, 88)
+    print(f"New contract stored value is {new_favorites_contract.retrieve()}")
+    print(f"Original stored value is {favorites_contract.retrieve()}")
+
 
 def moccasin_main():
     favorites_contract = deploy_favorites()

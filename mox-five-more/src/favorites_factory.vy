@@ -15,6 +15,8 @@ def __init__(original_favorite_contract: address):
 @external
 def create_favorites_contract():
     new_favorites_contract: address = create_copy_of(self.original_favorite_contract)
+    favorites_contract: i_favorites = i_favorites(new_favorites_contract)
+
     self.list_of_favorites_contracts.append(new_favorites_contract)  
 
 
