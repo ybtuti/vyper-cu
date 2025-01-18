@@ -4,4 +4,12 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "mamushi>=0.0.4",
+    "moccasin>=0.3.6",
+    "ruff>=0.9.2",
+]
+
+[tool.moccasin.project]
+src = "contracts"
+dependencies = ["snekmate"]
